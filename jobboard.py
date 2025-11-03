@@ -46,5 +46,8 @@ def job_board_bot(query):
       # get response
     # else quit
 if __name__ == "__main__":
-  response = job_board_bot("What are the top 5 websites for job searches.")
-  print(response)
+  user_input = input("enter query: ")
+  while (user_input != "bye"):
+    response = job_board_bot(user_input)
+    print(response)
+    user_input = input("enter query: ")
